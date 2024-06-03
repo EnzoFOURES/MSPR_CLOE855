@@ -10,7 +10,7 @@
     {% if error %}
         <p style="color: red;">Identifiant ou mot de passe incorrect.</p>
     {% endif %}
-    <form action="{{ url_for('authentification') }}" method="post">
+    <form action="{{ url_for('user_authentification') }}" method="post">
         <label for="username">Nom d'utilisateur:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Mot de passe:</label><br>
